@@ -44,7 +44,7 @@ public class ClienteController {
 		model.put("titulo", "Registrar cliente");
 		return "form";
 	}
-	
+	//Method for edit
 	@RequestMapping(value="/form/{id}")
 	public String editar(@PathVariable(value="id") Long id, Map<String, Object> model) {
 		
