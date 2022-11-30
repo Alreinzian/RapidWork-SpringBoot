@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
 	background: #f2f2f2;
 	font-size: 16px;
@@ -21,22 +22,25 @@ body {
 }
 
 /* --- Logo --- */
-.logo{
+.logo {
 	display: grid;
 	grid-template-columns: 10% 90%;
-	
+
 }
-.img-logo{
-	margin:15px 15px;
+
+.img-logo {
+	margin: 15px 15px;
 	width: 50px;
 	height: 50px;
 }
+
 .img-logo:hover {
-  color: red;
+	color: red;
 }
+
 .barra-lateral .logo {
 	background: steelblue;
-	
+
 }
 
 .barra-lateral .logo h2 {
@@ -52,7 +56,7 @@ body {
 	padding: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	border-bottom: 1px solid rgba(255,255,255, .1);
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
 .barra-lateral .menu a:hover {
@@ -65,45 +69,47 @@ body {
 
 
 
-.title{
-	
+.title {
+
 	font-size: 38px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: auto;
 	font-weight: 900;
 	margin-bottom: 2.5rem;
 }
+
 .wrapper {
-		
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-		display: grid;
-		grid-template-columns: repeat(3, 2fr);
-		gap: 2rem;
-	
-	
-         }
 
-.wrapper svg
-        {
-		height: 80px;
-		width: 60px;
-		color: black;
-		}
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	gap: 2rem;
 
-.box-size{
-	width: 200px;
-	margin:auto auto;
-	
+
 }
-.box{
-	
+
+.wrapper svg {
+	height: 80px;
+	width: 60px;
+	color: black;
+}
+
+.box-size {
+	width: 200px;
+	margin: auto auto;
+
+}
+
+.box {
+
 	background-color: grey;
 	border-radius: 10px;
 	border: solid 2px #ccc;
-	
+
 }
-.wrapper  h2{
+
+.wrapper h2 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 20px;
@@ -113,32 +119,35 @@ body {
 /* --- MEDIAQUERIES ---  */
 /* Dispositivo xs */
 @media screen and (max-width: 320px) {
-	.wrapper  h2{
-	    font-size: 10px;
+	.wrapper h2 {
+		font-size: 10px;
 
-    }
+	}
 
 }
 
 /* Dispositivo sm */
 @media screen and (max-width: 576px) {
-	
-	.menu{
+
+	.menu {
 		display: none
 	}
-	.wrapper  h2{
-	   font-size: 15px;
-	
+
+	.wrapper h2 {
+		font-size: 15px;
+
 	}
-	.wrapper h2{
-		font-size:15px;
+
+	.wrapper h2 {
+		font-size: 15px;
 	}
-	.wrapper{
+
+	.wrapper {
 		display: flex;
 		flex-direction: column;
-	
+
 	}
-	
+
 }
 
 /* Dispositivo md */
@@ -146,33 +155,34 @@ body {
 	.barra-lateral {
 		min-height: auto;
 	}
-	
-	
+
+
 
 }
 
 /* Dispositivo lg */
 @media screen and (max-width: 992px) {
-	
+
 	.barra-lateral {
 		min-width: auto;
 	}
-.wrapper {
-	
-  margin-top: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(50px, auto);
-  
-}
+
+	.wrapper {
+
+		margin-top: 1rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5px;
+		grid-auto-rows: minmax(50px, auto);
+
+	}
 }
 
 /* Dispositivo xl */
 @media screen and (max-width: 1200px) {
-	.main{
-	margin-top:50px;
+	.main {
+		margin-top: 50px;
 	}
-	
+
 
 	.barra-lateral .logo {
 		display: none;
@@ -187,6 +197,3 @@ body {
 
 /* Dispositivo xxl */
 @media screen and (max-width: 1400px) {}
-
-
-
